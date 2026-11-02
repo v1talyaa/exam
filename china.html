@@ -1,0 +1,134 @@
+<!doctype html>
+<html lang="uk">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Аналіз ключових індикаторів економічної безпеки Китаю.">
+  <title>Економічна безпека Китаю — Віталій Боярчук</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <header class="site-header">
+    <a class="brand" href="index.html" aria-label="На головну">
+      <span class="brand-mark">VB</span>
+      <span>Віталій Боярчук</span>
+    </a>
+    <button class="menu-toggle" type="button" aria-label="Відкрити меню" aria-expanded="false">☰</button>
+    <nav class="nav" aria-label="Основна навігація">
+      <a href="index.html">Про автора</a>
+      <a class="active" href="china.html">Економічна безпека Китаю</a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero analysis-hero">
+      <div class="hero-copy">
+        <p class="eyebrow">Аналітична сторінка</p>
+        <h1>Економічна безпека Китаю</h1>
+        <p class="lead">Узагальнення ключових результатів аналізу за виробничими, демографічними, зовнішньоекономічними, інвестиційно-інноваційними, соціальними та фінансовими індикаторами. Оцінки ґрунтуються на порогових інтервалах, використаних у навчальному дослідженні.</p>
+      </div>
+      <div class="china-emblem" aria-hidden="true">
+        <span class="star">★</span>
+        <span class="china-code">CN</span>
+      </div>
+    </section>
+
+    <section class="section compact-top">
+      <div class="section-heading">
+        <p class="eyebrow">Ключові показники</p>
+        <h2>Поточна аналітична картина</h2>
+        <p class="section-note">Середні значення розраховані за періодами, доступними у вихідному Excel-файлі.</p>
+      </div>
+      <div class="kpi-grid" id="kpi-grid"></div>
+    </section>
+
+    <section class="section">
+      <div class="section-heading">
+        <p class="eyebrow">Динаміка</p>
+        <h2>Графіки ключових індикаторів</h2>
+      </div>
+      <div class="charts-grid">
+        <article class="chart-card">
+          <div class="chart-title-row"><div><span class="card-kicker">Демографічна безпека</span><h3>Очікувана тривалість життя</h3></div><span class="trend positive">позитивна динаміка</span></div>
+          <div class="chart" data-chart="life"></div>
+        </article>
+        <article class="chart-card">
+          <div class="chart-title-row"><div><span class="card-kicker">Демографічна безпека</span><h3>Смертність немовлят</h3></div><span class="trend positive">зниження — позитивно</span></div>
+          <div class="chart" data-chart="infant"></div>
+        </article>
+        <article class="chart-card">
+          <div class="chart-title-row"><div><span class="card-kicker">Зовнішньоекономічна безпека</span><h3>Покриття імпорту експортом</h3></div><span class="trend neutral">біля оптимуму</span></div>
+          <div class="chart" data-chart="trade"></div>
+        </article>
+        <article class="chart-card">
+          <div class="chart-title-row"><div><span class="card-kicker">Інвестиційно-інноваційна безпека</span><h3>Витрати на НДДКР</h3></div><span class="trend positive">зростання — позитивно</span></div>
+          <div class="chart" data-chart="rnd"></div>
+        </article>
+        <article class="chart-card">
+          <div class="chart-title-row"><div><span class="card-kicker">Соціальна безпека</span><h3>Нерівність доходів</h3></div><span class="trend positive">розрив скорочується</span></div>
+          <div class="chart" data-chart="inequality"></div>
+        </article>
+        <article class="chart-card">
+          <div class="chart-title-row"><div><span class="card-kicker">Фінансова безпека</span><h3>Державний борг</h3></div><span class="trend negative">зростання — ризик</span></div>
+          <div class="chart" data-chart="debt"></div>
+        </article>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="section-heading">
+        <p class="eyebrow">Пороги та оцінка</p>
+        <h2>Фактичні значення проти безпечних інтервалів</h2>
+      </div>
+      <div class="table-wrap">
+        <table>
+          <thead>
+            <tr><th>Індикатор</th><th>Середнє</th><th>Орієнтир / поріг</th><th>Рівень</th><th>Тенденція</th></tr>
+          </thead>
+          <tbody id="summary-table"></tbody>
+        </table>
+      </div>
+    </section>
+
+    <section class="section split-section">
+      <article class="card highlight-card">
+        <span class="card-kicker">Сильні сторони</span>
+        <h2>Що підтримує стійкість</h2>
+        <ul class="clean-list">
+          <li>Співвідношення експорту до імпорту в середньому перебуває в оптимальному діапазоні.</li>
+          <li>Витрати на НДДКР зростають і наближаються до оптимального рівня.</li>
+          <li>Урожайність основних зернових має висхідну динаміку.</li>
+          <li>Тривалість життя залишається високою, а дитяча смертність знижується.</li>
+        </ul>
+      </article>
+      <article class="card danger-card">
+        <span class="card-kicker">Основні загрози</span>
+        <h2>Що потребує уваги</h2>
+        <ul class="clean-list">
+          <li>Децильний коефіцієнт доходів суттєво перевищує безпечний рівень, що вказує на значну соціальну нерівність.</li>
+          <li>Борг сектору загального державного управління стрімко зростає та перевищує 60% ВВП.</li>
+          <li>Дитяча смертність за середнім значенням залишається поза безпечними інтервалами, хоча тренд позитивний.</li>
+          <li>У 2025 році коефіцієнт покриття імпорту експортом вийшов вище оптимального інтервалу, що потребує спостереження за торговельним балансом.</li>
+        </ul>
+      </article>
+    </section>
+
+    <section class="section conclusion">
+      <p class="eyebrow">Узагальнений висновок</p>
+      <h2>Економічна безпека Китаю має сильний потенціал, але нерівномірний профіль ризиків</h2>
+      <p>За сукупністю досліджених показників економічна безпека Китаю характеризується неоднозначним станом. Сильними сторонами є висока очікувана тривалість життя, зростання урожайності, відносно збалансоване співвідношення експорту та імпорту, а також стале збільшення витрат на дослідження і розробки. Позитивними є тенденції до скорочення дитячої смертності та поступового зменшення нерівності доходів.</p>
+      <p>Водночас ключовими ризиками залишаються значний розрив між доходами найбагатших і найбідніших груп населення та стрімке зростання боргу сектору загального державного управління. Отже, Китай має значний виробничий, зовнішньоекономічний та інноваційний потенціал, однак збереження високої соціальної нерівності й посилення боргового навантаження формують суттєві ризики для довгострокової економічної безпеки.</p>
+      <p class="method-note"><strong>Методична примітка:</strong> через відсутність повного ряду даних World Bank щодо боргу центрального уряду Китаю в аналізі використано близький за економічним змістом показник — валовий борг сектору загального державного управління, % ВВП.</p>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <span>Віталій Боярчук · 2026</span>
+    <a href="index.html">← Про автора</a>
+  </footer>
+
+  <script src="js/data.js"></script>
+  <script src="js/charts.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>
